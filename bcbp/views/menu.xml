@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+
+      <menuitem id="bcbp" name="BCBP" sequence="10" />
+
+
+
+
+        <!--General-->
+        <menuitem id="bcbp1"
+                  name="BCBP"
+                  parent="bcbp"
+                  sequence="1" />
+
+
+                  <!--Dashboard-->
+                  <menuitem id="member"
+                            name="Members"
+                            parent="bcbp1"
+                            sequence="1"
+                            action="members_action" />
+               
+
+                            
+  </data>
+</odoo>

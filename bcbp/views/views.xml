@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="bcbp.list">
+      <field name="name">BCBP list</field>
+      <field name="model">bcbp.bcbp</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="bcbp.action_window">
+      <field name="name">BCBP window</field>
+      <field name="res_model">bcbp.bcbp</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="bcbp.action_server">
+      <field name="name">BCBP server</field>
+      <field name="model_id" ref="model_bcbp_bcbp"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="BCBP" id="bcbp.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="bcbp.menu_1" parent="bcbp.menu_root"/>
+    <menuitem name="Menu 2" id="bcbp.menu_2" parent="bcbp.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="bcbp.menu_1_list" parent="bcbp.menu_1"
+              action="bcbp.action_window"/>
+    <menuitem name="Server to list" id="bcbp" parent="bcbp.menu_2"
+              action="bcbp.action_server"/>
+    -->
+  </data>
+</odoo>
